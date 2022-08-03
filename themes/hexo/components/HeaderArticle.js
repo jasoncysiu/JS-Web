@@ -1,19 +1,56 @@
 import Link from 'next/link'
 import { useGlobal } from '@/lib/global'
 import formatDate from '@/lib/formatDate'
-import BLOG from '@/blog.config'
+import { useEffect } from 'react'
 
 export default function HeaderArticle({ post, siteInfo }) {
   if (!post) {
     return <></>
   }
   const headerImage = post?.page_cover ? `url("${post.page_cover}")` : `url("${siteInfo?.pageCover}")`
+  const { isDarkMode } = useGlobal()
 
   const { locale } = useGlobal()
   const date = formatDate(
     post?.date?.start_date || post?.createdTime,
     locale.LOCALE
   )
+
+  const scrollTrigger = () => {
+    const scrollS = window.scrollY
+    const nav = document.querySelector('#sticky-nav')
+
+    if (scrollS < 300) {
+      nav && nav.classList.replace('bg-white', 'bg-none')
+      nav && nav.classList.replace('text-black', 'text-white')
+    } else {
+      nav && nav.classList.replace('bg-none', 'bg-white')
+      nav && nav.classList.replace('text-white', 'text-black')
+    }
+    updateTopNav()
+  }
+  useEffect(() => {
+    scrollTrigger()
+    window.addEventListener('scroll', scrollTrigger)
+    return () => {
+      window.removeEventListener('scroll', scrollTrigger)
+    }
+  })
+
+  const updateTopNav = () => {
+    if (!isDarkMode) {
+      const stickyNavElement = document.getElementById('sticky-nav')
+      const header = document.querySelector('#header')
+      if (!header || !stickyNavElement) {
+        return
+      }
+      if (window.scrollY < header.clientHeight) {
+        stickyNavElement?.classList?.add('dark')
+      } else {
+        stickyNavElement?.classList?.remove('dark')
+      }
+    }
+  }
 
   return (
     <div
@@ -56,10 +93,10 @@ export default function HeaderArticle({ post, siteInfo }) {
                 {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedTime}
               </div>
             </div>
-            {BLOG.ANALYTICS_BUSUANZI_ENABLE && <div className="busuanzi_container_page_pv font-light mr-2">
+            <div className=" busuanzi_container_page_pv font-light mr-2">
               <span className="mr-2 busuanzi_value_page_pv" />
-              次访问
-            </div>}
+              view/s
+            </div>
           </section>
         </div>
       </header>

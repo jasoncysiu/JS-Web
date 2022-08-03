@@ -1,3 +1,4 @@
+import { useGlobal } from '@/lib/global'
 import { useEffect, useState } from 'react'
 import Typed from 'typed.js'
 import CONFIG_HEXO from '../config_hexo'
@@ -8,21 +9,23 @@ let autoScroll = false
 
 /**
  *
- * @returns 头图
+ * @returns 頭圖
  */
 const Header = props => {
   const [typed, changeType] = useState()
+  const { isDarkMode } = useGlobal()
   const { siteInfo } = props
   useEffect(() => {
     scrollTrigger()
     updateHeaderHeight()
+    updateTopNav()
     if (!typed && window && document.getElementById('typed')) {
       changeType(
         new Typed('#typed', {
           strings: CONFIG_HEXO.HOME_BANNER_GREETINGS,
-          typeSpeed: 200,
-          backSpeed: 100,
-          backDelay: 400,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 200,
           showCursor: true,
           smartBackspace: true
         })
@@ -45,8 +48,19 @@ const Header = props => {
 
   const scrollTrigger = () => {
     const scrollS = window.scrollY
+    const nav = document.querySelector('#sticky-nav')
 
-    // 自动滚动
+    if (scrollS < 500) {
+      nav && nav.classList.replace('bg-white', 'bg-none')
+      nav && nav.classList.replace('text-black', 'text-white')
+      nav && nav.classList.replace('border', 'border-transparent')
+    } else {
+      nav && nav.classList.replace('bg-none', 'bg-white')
+      nav && nav.classList.replace('text-white', 'text-black')
+      nav && nav.classList.replace('border-transparent', 'border')
+    }
+
+    // 自動滾動
     if ((scrollS > windowTop) & (scrollS < window.innerHeight) && !autoScroll
     ) {
       autoScroll = true
@@ -59,6 +73,19 @@ const Header = props => {
       setTimeout(autoScrollEnd, 500)
     }
     windowTop = scrollS
+
+    updateTopNav()
+  }
+
+  const updateTopNav = () => {
+    if (!isDarkMode) {
+      const stickyNavElement = document.getElementById('sticky-nav')
+      if (window.scrollY < window.innerHeight) {
+        stickyNavElement?.classList?.add('dark')
+      } else {
+        stickyNavElement?.classList?.remove('dark')
+      }
+    }
   }
 
   function updateHeaderHeight () {

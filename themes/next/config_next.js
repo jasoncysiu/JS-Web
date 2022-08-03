@@ -1,37 +1,37 @@
 const CONFIG_NEXT = {
 
-  HOME_BANNER: false, // 首页是否显示大图及标语 [true,false]
-  HOME_BANNER_Strings: ['Hi，我是一个程序员', 'Hi，我是一个打工人', 'Hi，我是一个干饭人', '欢迎来到我的博客🎉'], // 首页大图标语文字
+  HOME_BANNER: false, // 首頁是否顯示大圖及標語 [true,false]
+  HOME_BANNER_GREETINGS: [ 'Welcome to my blog!',  'I am a Techthusiast','I am a Growth Hacker','I am an Outlier', 'La vita è bella','不鳴則已，一鳴驚人'], // 首頁大圖標語文字
 
-  NAV_TYPE: 'normal', // ['fixed','autoCollapse','normal'] 分别是固定屏幕顶部、屏幕顶部自动折叠，不固定
+  NAV_TYPE: 'normal', // ['fixed','autoCollapse','normal'] 分別是固定屏幕頂部、屏幕頂部自動折疊，不固定
 
-  POST_LIST_COVER: false, // 文章列表显示封面图
-  POST_LIST_PREVIEW: true, // 显示文章预览
-  POST_LIST_SUMMARY: false, // 显示用户自定义摘要，有预览时优先只展示预览
+  POST_LIST_COVER: false, // 文章列表顯示封面圖
+  POST_LIST_PREVIEW: true, // 顯示文章預覽
+  POST_LIST_SUMMARY: false, // 顯示用戶自定義摘要，有預覽時優先只展示預覽
 
-  // 右侧组件
-  RIGHT_BAR: true, // 是否显示右侧栏
-  RIGHT_LATEST_POSTS: true, // 右侧栏最新文章
-  RIGHT_CATEGORY_LIST: true, // 右侧边栏文章分类列表
-  RIGHT_TAG_LIST: true, // 右侧边栏标签分类列表
-  RIGHT_AD: false, // 右侧广告
+  // 右側組件
+  RIGHT_BAR: true, // 是否顯示右側欄
+  RIGHT_LATEST_POSTS: true, // 右側欄最新文章
+  RIGHT_CATEGORY_LIST: true, // 右側邊欄文章分類列表
+  RIGHT_TAG_LIST: true, // 右側邊欄標簽分類列表
+  RIGHT_AD: false, // 右側廣告
 
-  // 菜单
-  MENU_HOME: true, // 显示首页
-  MENU_CATEGORY: true, // 显示分类
-  MENU_TAG: true, // 显示标签
-  MENU_ARCHIVE: true, // 显示归档
-  MENU_ABOUT: false, // 显示关于
-  MENU_SEARCH: true, // 显示搜索
+  // 菜單
+  MENU_HOME: true, // 顯示首頁
+  MENU_CATEGORY: true, // 顯示分類
+  MENU_TAG: true, // 顯示標簽
+  MENU_ARCHIVE: true, // 顯示歸檔
+  MENU_ABOUT: false, // 顯示關於
+  MENU_SEARCH: true, // 顯示搜索
 
-  WIDGET_TO_TOP: true, // 是否显示回顶
-  WIDGET_TO_BOTTOM: false, // 显示回底
-  WIDGET_DARK_MODE: false, // 显示日间/夜间模式切换
-  WIDGET_TOC: true, // 移动端显示悬浮目录
+  WIDGET_TO_TOP: true, // 是否顯示回頂
+  WIDGET_TO_BOTTOM: false, // 顯示回底
+  WIDGET_DARK_MODE: false, // 顯示日間/夜間模式切換
+  WIDGET_TOC: true, // 移動端顯示懸浮目錄
 
   ARTICLE_SHARE: false, // 文章分享功能
-  ARTICLE_RELATE_POSTS: true, // 相关文章推荐
-  ARTICLE_COPYRIGHT: true // 文章版权声明
+  ARTICLE_RELATE_POSTS: true, // 相關文章推薦
+  ARTICLE_COPYRIGHT: true // 文章版權聲明
 
 }
 
