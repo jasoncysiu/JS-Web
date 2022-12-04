@@ -52,10 +52,10 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = CONFIG_NE
   if (!postsToShow || postsToShow.length === 0) {
     return <BlogPostListEmpty currentSearch={currentSearch} />
   } else {
-    return <div id='container' ref={targetRef}>
+    return <div ref={targetRef}>
 
       {/* 文章列表 */}
-      <div className='flex flex-wrap space-y-1 lg:space-y-4'>
+      <div id='container' className='flex flex-wrap space-y-1 lg:space-y-4'>
         {postsToShow.map(post => (
           <BlogPostCard key={post.id} post={post} showSummary={showSummary} />
         ))}
@@ -76,7 +76,7 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = CONFIG_NE
  * 获取从第1页到指定页码的文章
  * @param page 第几页
  * @param totalPosts 所有文章
- * @param postsPerPage 每页文章数量
+ * @param postsPerPage 每页Number of posts 量
  * @returns {*}
  */
 const getPostByPage = function (page, totalPosts, postsPerPage) {

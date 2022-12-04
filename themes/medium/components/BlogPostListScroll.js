@@ -85,7 +85,7 @@ const BlogPostListScroll = ({ posts = [], currentSearch }) => {
  * 获取从第1页到指定页码的文章
  * @param page 第几页
  * @param totalPosts 所有文章
- * @param postsPerPage 每页文章数量
+ * @param postsPerPage 每页Number of posts 量
  * @returns {*}
  */
 const getPostByPage = function (page, totalPosts, postsPerPage) {

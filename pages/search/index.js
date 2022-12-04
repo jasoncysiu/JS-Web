@@ -5,8 +5,9 @@ import * as ThemeMap from '@/themes'
 
 const Search = props => {
   const { posts, siteInfo } = props
+  const router = useRouter()
   let filteredPosts
-  const searchKey = getSearchKey()
+  const searchKey = getSearchKey(router)
   // 静态过滤
   if (searchKey) {
     filteredPosts = posts.filter(post => {
@@ -52,15 +53,16 @@ export async function getStaticProps() {
     from: 'search-props',
     pageType: ['Post']
   })
-  props.posts = props.allPosts
+  const { allPages } = props
+  const allPosts = allPages.filter(page => page.type === 'Post' && page.status === 'Published')
+  props.posts = allPosts
   return {
     props,
     revalidate: 1
   }
 }
 
-function getSearchKey() {
-  const router = useRouter()
+function getSearchKey(router) {
   if (router.query && router.query.s) {
     return router.query.s
   }

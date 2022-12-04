@@ -35,13 +35,13 @@ export default function TopNavBar(props) {
                 </div>
             </div>
 
-            {/* 顶部菜单 */}
+            {/* 顶部菜单 !!Changed from _blank to _self*/}
             <div className='hidden md:flex'>
                 {customNav && customNav.map(link => {
                   if (link.show) {
                     const selected = (router.pathname === link.to) || (router.asPath === link.to)
                     return <Link key={`${link.id}-${link.to}`} title={link.to} href={link.to} >
-                            <a target={link.to.indexOf('http') === 0 ? '_blank' : '_self'} className={'px-2 duration-300 text-sm justify-between dark:text-gray-300 hover:underline cursor-pointer flex flex-nowrap items-center ' +
+                            <a target={link.to.indexOf('http') === 0 ? '_self' : '_self'} className={'px-2 duration-300 text-sm justify-between dark:text-gray-300 hover:underline cursor-pointer flex flex-nowrap items-center ' +
                                 (selected ? 'bg-green-600 text-white hover:text-white' : 'hover:text-green-600')} >
                                 <div className='items-center justify-center flex '>
                                     <i className={link.icon} />

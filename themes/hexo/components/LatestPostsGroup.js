@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 /**
  * 最新文章列表
- * @param posts 所有文章数据
+ * @param posts 所有Number of posts 据
  * @param sliceCount 截取展示的数量 默认6
  * @constructor
  */
@@ -18,14 +18,14 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
   const { locale } = useGlobal()
   return (
     <>
-      <div className="font-sans mb-2 px-1 flex flex-nowrap justify-between">
+      <div className=" mb-2 px-1 flex flex-nowrap justify-between">
         <div>
           <i className="mr-2 fas fas fa-history" />
           {locale.COMMON.LATEST_POSTS}
         </div>
       </div>
       {latestPosts.map(post => {
-        const selected = currentPath === `${BLOG.SUB_PATH}/article/${post.slug}`
+        const selected = currentPath === `${BLOG.SUB_PATH}/${post.slug}`
         const headerImage = post?.page_cover
           ? `url("${post.page_cover}")`
           : `url("${siteInfo?.pageCover}")`
@@ -34,10 +34,10 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
           <Link
             key={post.id}
             title={post.title}
-            href={`${BLOG.SUB_PATH}/article/${post.slug}`}
+            href={`${BLOG.SUB_PATH}/${post.slug}`}
             passHref
           >
-            <a className={'my-1 flex font-sans'}>
+            <a className={'my-1 flex '}>
               <div
                 className="w-20 h-16 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: headerImage }}

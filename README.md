@@ -59,7 +59,7 @@
 - 给这个项目点个小星星 😉
 - 将 [这个 Notion 模板](https://tanghh.notion.site/02ab3b8678004aa69e9e415905ef32a5) 制作副本，并分享这个页面给所有人
 - [Fork](https://github.com/tangly1024/NotionNext/fork) 这个项目
-  - _(可选)_ 用自己的图片替换 `/public` 文件夹里的 `avatar.jpg`、`favicon_js.svg` 和 `favicon_js.ico`
+  - _(可选)_ 用自己的图片替换 `/public` 文件夹里的 `avatar.jpg`、`favicon.svg` 和 `favicon.ico`
   - 在 `blog.config.js` 配置相关选项，`NOTION_PAGE_ID`: 你刚刚分享出去的 Notion 页面网址中的页面 ID，通常是网址中工作区地址后的 32 位字符串
 - 在 [Vercel](https://vercel.com)中部署项目
 - **稍微等等就可以访问了！** 简单吗?
@@ -80,7 +80,7 @@ yarn run start # 本地启动NextJS服务
 - **框架**: [Next.js](https://nextjs.org)
 - **样式**: [Tailwind CSS](https://www.tailwindcss.cn/) 和 `@tailwindcss/jit` compiler
 - **渲染**: [React-notion-x](https://github.com/NotionX/react-notion-x)
-- **评论**: [Giscus](https://giscus.app/zh-CN), [Gitalk](https://gitalk.github.io), [Cusdis](https://gitalk.github.io), [Utterances](https://utteranc.es)
+- **评论**: [Giscus](https://giscus.app/zh-CN), [Gitalk](https://gitalk.github.io), [Cusdis](https://cusdis.com), [Utterances](https://utteranc.es)
 - **图标**：[fontawesome v5.15](https://fontawesome.com/v5.15/icons?d=gallery)
 
 ## 更新日志
@@ -103,10 +103,20 @@ yarn run start # 本地启动NextJS服务
     
   <td align="center"><a href="https://github.com/txs"><img src="https://avatars.githubusercontent.com/u/554329" width="64px;" alt="txs"/><br/><sub><b>txs</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=txs" title="txs" >🔧 🐛</a></td>  
 
-  <td align="center"><a href="https://github.com/yuzhanglong"><img src="https://avatars.githubusercontent.com/u/56540811" width="64px;" alt="txs"/><br/><sub><b>yuzhanglong</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=yuzhanglong" title="yuzhanglong" >🔧 🐛</a></td> 
+  <td align="center"><a href="https://github.com/yuzhanglong"><img src="https://avatars.githubusercontent.com/u/56540811" width="64px;" alt="yuzhanglong"/><br/><sub><b>yuzhanglong</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=yuzhanglong" title="yuzhanglong" >🔧 🐛</a></td> 
     
   <td align="center"><a href="https://github.com/Hscpro"><img src="https://avatars.githubusercontent.com/u/13926044" width="64px;" alt="Hscpro"/><br/><sub><b>Hscpro</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=Hscpro" title="Hscpro" >🔧 🐛</a></td> 
     
+  <td align="center"><a href="https://github.com/JensonMiao"><img src="https://avatars.githubusercontent.com/u/46488783" width="64px;" alt="JensonMiao"/><br/><sub><b>JensonMiao</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=JensonMiao" title="JensonMiao" >🔧 🐛</a></td> 
+  
+  <td align="center"><a href="https://github.com/haixin1225"><img src="https://avatars.githubusercontent.com/u/28828438" width="64px;"  alt="haixin1225"/><br/><sub><b>haixin1225</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=haixin1225" title="haixin1225" >🔧 🐛</a></td>
+
+  <td align="center"><a href="https://github.com/mouyase"><img src="https://avatars.githubusercontent.com/u/7844572" width="64px;"  alt="mouyase"/><br/><sub><b>mouyase</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=mouyase" title="mouyase" >🔧 🐛</a></td>
+  
+  <td align="center"><a href="https://github.com/qfdk"><img src="https://avatars.githubusercontent.com/u/2404478" width="64px;"  alt="qfdk"/><br/><sub><b>qfdk</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=qfdk" title="qfdk" >🔧 🐛</a></td>
+  
+  <td align="center"><a href="https://github.com/ifyz"><img src="https://avatars.githubusercontent.com/u/118271360" width="64px;"  alt="ifyz"/><br/><sub><b>ifyz</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=ifyz" title="ifyz" >🔧 🐛</a></td>
+
 </tr>
 </table>
 
