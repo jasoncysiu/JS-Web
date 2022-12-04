@@ -1,7 +1,7 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
   AUTHOR: 'Jason Siu', // 作者
-  BIO: 'A warm welcome! I live in Melbourne, AU 🇦🇺 and work as an IT researcher focusing on Human Computer Interaction (HCI), Data Analytics and Software Dev. Feel free to read my blog (personal learning) and my portfolio (professional career).', // 作者简介
+  BIO: 'A warm welcome! I live in Melbourne, AU 🇦🇺 and work as an IT researcher focusing on Human Computer Interaction (HCI), Data Analytics, and Software Dev. Feel free to read my blog (personal learning) and my portfolio (professional career).', // 作者简介
   LINK: 'https://jason-siu.com', // 网站地址
   KEYWORDS: 'Jason Siu, Jason Siu blog, Jason Ching Yuen Siu, Jason-Siu, Jason-Siu.com, WWW.jason-siu.com', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
@@ -32,7 +32,7 @@ const BLOG = {
 
 
   BACKGROUND_LIGHT: '#eeeeee', // use hex value, don't forget '#' e.g #fffefc
-  BACKGROUND_DARK: '#00162A', // use hex value, don't forget '#'
+  BACKGROUND_DARK: '#000000', // use hex value, don't forget '#'
   SUB_PATH: '', // leave this empty unless you want to deploy in a folder
 
   POST_LIST_STYLE: 'page', // ['page','scroll] 文章列表样式:页码分页、单页滚动加载
