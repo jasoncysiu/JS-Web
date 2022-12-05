@@ -10,7 +10,7 @@ export default function WordCount() {
   })
 
   return <div id='wordCountWrapper' className='hidden'>
-    <i className='mr-1 fas fa-file-word' /> 本文字数 <strong id='wordCount'>0</strong> &nbsp;|&nbsp; <i className='mr-1 fas fa-clock' /> 阅读时长 ≈ <strong id='readTime'>0</strong> 分钟
+    <i className='mr-1 fas fa-file-word' /> Word Count <strong id='wordCount'>0</strong> &nbsp;|&nbsp; <i className='mr-1 fas fa-clock' /> Read Time ≈ <strong id='readTime'>0</strong> mins
   </div>
 }
 
