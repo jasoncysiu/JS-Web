@@ -56,7 +56,7 @@ const BLOG = {
   CONTACT_WEIBO: '', // 你的微博个人主页
   CONTACT_TWITTER: '', // 你的twitter个人主页
   CONTACT_GITHUB: 'https://github.com/jasonXsiu', // 你的github个人主页
-  CONTACT_LINKEDIN: 'https://linkedin.com/in/JasonXsiu', // 你的linkedIn 首页
+  CONTACT_LINKEDIN: 'https://linkedin.com/in/Jasoncysiu', // 你的linkedIn 首页
 
 
   // 鼠标点击烟花特效
