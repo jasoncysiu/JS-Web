@@ -52,10 +52,10 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 0, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'cyjasonsiu@gmail.com', // 邮箱
+  CONTACT_EMAIL: 'jasoncysiu@gmail.com', // 邮箱
   CONTACT_WEIBO: '', // 你的微博个人主页
   CONTACT_TWITTER: '', // 你的twitter个人主页
-  CONTACT_GITHUB: 'https://github.com/jasonXsiu', // 你的github个人主页
+  CONTACT_GITHUB: 'https://github.com/jasoncysiu', // 你的github个人主页
   CONTACT_LINKEDIN: 'https://linkedin.com/in/Jasoncysiu', // 你的linkedIn 首页
 
 
