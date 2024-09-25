@@ -1,6 +1,6 @@
 const BLOG = {
   AUTHOR: 'Jason Siu', // 作者
-  BIO: 'A warm welcome! I am a tech enthusiast who loves sharing my passion for learning and self-discovery through my website.',
+  BIO: 'A warm welcome! I am a tech enthusiast, passionate about learning and self-discovery.',
   LINK: 'https://jason-siu.com', // 网站地址
   KEYWORDS: 'Jason Siu, Jason Siu blog, Jason Ching Yuen Siu, Jason-Siu, Jason-Siu.com, WWW.jason-siu.com', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
