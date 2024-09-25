@@ -11,7 +11,7 @@ export const Nav = (props) => {
   const { locale } = useGlobal()
   let links = [
     { icon: 'fas fa-search', name: locale.NAV.SEARCH, to: '/search' },
-    // { icon: 'fas fa-archive', name: locale.NAV.ARCHIVE, to: '/archive' },
+    { icon: 'fas fa-archive', name: locale.NAV.ARCHIVE, to: '/archive' },
     { icon: 'fas fa-folder', name: locale.COMMON.CATEGORY, to: '/category' },
     { icon: 'fas fa-tag', name: locale.COMMON.TAGS, to: '/tag' }
   ]
