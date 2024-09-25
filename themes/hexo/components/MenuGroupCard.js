@@ -11,7 +11,7 @@ const MenuGroupCard = (props) => {
   const tagSlot = <div className='text-center'>{tags?.length}</div>
 
   const links = [
-    { name: locale.COMMON.ARTICLE, to: '/archive', slot: archiveSlot, show: CONFIG_HEXO.MENU_ARCHIVE },
+    // { name: locale.COMMON.ARTICLE, to: '/archive', slot: archiveSlot, show: CONFIG_HEXO.MENU_ARCHIVE },
     { name: locale.COMMON.CATEGORY, to: '/category', slot: categorySlot, show: CONFIG_HEXO.MENU_CATEGORY },
     { name: locale.COMMON.TAGS, to: '/tag', slot: tagSlot, show: CONFIG_HEXO.MENU_TAG }
   ]
