@@ -30,9 +30,15 @@ const BLOG = {
   // CUSTOM_FONT_SANS: ['LXGW WenKai'], // 自定义无衬线字体
   // CUSTOM_FONT_SERIF: ['LXGW WenKai'], // 自定义衬线字体
 
-  CUSTOM_FONT_URL: ['https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap'], // URL to Google Fonts CSS
-  CUSTOM_FONT_SANS: ['Aref Ruqaa'], // Specify the font name for sans-serif
-  CUSTOM_FONT_SERIF: ['Aref Ruqaa'], // Specify the font name for serif
+  // CUSTOM_FONT_URL: ['https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap'], // URL to Google Fonts CSS
+  // CUSTOM_FONT_SANS: ['Aref Ruqaa'], // Specify the font name for sans-serif
+  // CUSTOM_FONT_SERIF: ['Aref Ruqaa'], // Specify the font name for serif
+
+
+  CUSTOM_FONT_URL: ['https://raw.githubusercontent.com/jasoncysiu/aino/refs/heads/main/aino-style.css'], // URL to Google Fonts CSS
+  CUSTOM_FONT_SANS: ['Aino'], // Specify the font name for sans-serif
+  CUSTOM_FONT_SERIF: ['Aino'], // Specify the font name for serif
+
 
 
   // 图标库CDN(可以直接改版本号）
