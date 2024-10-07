@@ -35,9 +35,9 @@ const BLOG = {
   // CUSTOM_FONT_SERIF: ['Aref Ruqaa'], // Specify the font name for serif
 
 
-  CUSTOM_FONT_URL: ['https://raw.githubusercontent.com/jasoncysiu/aino/refs/heads/main/aino-style.css'], // URL to Google Fonts CSS
-  CUSTOM_FONT_SANS: ['Aino'], // Specify the font name for sans-serif
-  CUSTOM_FONT_SERIF: ['Aino'], // Specify the font name for serif
+  CUSTOM_FONT_URL: ['https://raw.githubusercontent.com/jasoncysiu/aref_RuqaaInk/refs/heads/main/style.css'], // URL to Google Fonts CSS
+  CUSTOM_FONT_SANS: ['Aref Ruqaa Ink'], // Specify the font name for sans-serif
+  CUSTOM_FONT_SERIF: ['Aref Ruqaa Ink'], // Specify the font name for serif
 
 
 
