@@ -1,3 +1,4 @@
+
 {
   "name": "notion-next",
   "version": "3.6.1",
@@ -75,8 +76,5 @@
   "bugs": {
     "url": "https://github.com/tangly/NotionNext/issues",
     "email": "tlyong1992@hotmail.com"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
