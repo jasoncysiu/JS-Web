@@ -1,6 +1,6 @@
 const CONFIG_HEXO = {
   HOME_BANNER_ENABLE: true,
-  HOME_BANNER_GREETINGS: [ 'Welcome to my blog!',  'I am a Growth Hacker, a Techthusiast, and an Outlier', '路漫漫其修遠兮，吾將上下而求索','The road ahead will be long. Our climb will be steep.','不鳴則已，一鳴驚人'], // 首頁大圖標語文字
+  HOME_BANNER_GREETINGS: [ 'Welcome to my blog!',  'I am a Growth Hacker, a Techthusiast, and an Outlier', '路漫漫其修遠兮，吾將上下而求索','The road ahead will be long. Our climb will be steep.','不鳴則已，一鳴驚人','Say hi anytime at me@jason-siu.com!'], // 首頁大圖標語文字
 
   HOME_NAV_BUTTONS: true, // 首页是否显示分类大图标按钮
 
