@@ -1,7 +1,8 @@
 const CONFIG_NEXT = {
 
   HOME_BANNER: false, // 首页是否显示大图及标语 [true,false]
-  HOME_BANNER_GREETINGS: [ 'Welcome to my blog!',  'I am a Growth Hacker, a Techthusiast, and an Outlier', '路漫漫其修遠兮，吾將上下而求索','The road ahead will be long. Our climb will be steep.','不鳴則已，一鳴驚人'], // 首页大图标语文字
+  HOME_BANNER_GREETINGS: [ 'Welcome to my blog!',  'I am a Growth Hacker, a Techthusiast, and an Outlier', '路漫漫其修遠兮，吾將上下而求索','The road ahead will be long. Our climb will be steep.','不鳴則已，一鳴驚人','Say hi anytime at me@jason-siu.com!'], // 首页大图标语文字
+
 
   NAV_TYPE: 'normal', // ['fixed','autoCollapse','normal'] 分别是固定屏幕顶部、屏幕顶部自动折叠，不固定
 
